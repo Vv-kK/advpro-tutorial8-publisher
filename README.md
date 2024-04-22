@@ -10,3 +10,7 @@
 ![publisher console](img/publisher_console.jpg)
 ![subscriber console](img/subscriber_console.jpg)
 Pada screenshot diatas terlihat bahwa program publisher berhasil di run dan mengirimkan data pada subscriber melalui message broker. Keberhasilan dari pengiriman data ini terlihat dari console subsriber yang berhasil mendapatkan dan menampilkan data yang tadi ditulis pada program publisher.
+
+<b>Mencoba menjalankan program publisher berulang kali</b>
+![hasil rabbitMQ](img/spike.jpg)
+Terlihat bahwa spike muncul pada grafik message rates. Message rates ini merupakan grafik yang menunjukkan jumlah message yang dikirim tiap detiknya. Spike ini muncul setiap kali dijalankan perintah cargo run pada program publisher. Hal ini menunjukkan adanya message yang terkirim setiap program publisher dijalankan, maka menyebabkan spike.

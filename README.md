@@ -3,5 +3,10 @@
 
 2. Program subscriber dan publisher memiliki url yang sama karena menggunakan satu tempat yang sama untuk berkomunikasi. Perbedaannya adalah publisher akan mengirimkan data ke message queue sedangkan subscriber sebagai listener yang mengambil data dari message queue. Jika url nya berbeda, keduanya tidak akan bisa berkomunikasi.
 
-Mencoba membuka RabbitMQ sebagai message broker
+<b>Mencoba membuka RabbitMQ sebagai message broker</b>
 ![](img/rabbitmq_initial.jpg)
+
+<b>Mencoba mengirim dan memproses event</b>
+![publisher console](img/publisher_console.jpg)
+![subscriber console](img/subscriber_console.jpg)
+Pada screenshot diatas terlihat bahwa program publisher berhasil di run dan mengirimkan data pada subscriber melalui message broker. Keberhasilan dari pengiriman data ini terlihat dari console subsriber yang berhasil mendapatkan dan menampilkan data yang tadi ditulis pada program publisher.
